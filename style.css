@@ -40,6 +40,7 @@
 
 body{
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -180,4 +181,15 @@ footer a:hover{
 
 footer ion-icon{
   vertical-align: middle;
+}
+
+/*confiuração de midia*/
+@media(min-width: 700px){
+  :root{
+    --bg-url:url(./assets/bgdesktop-dark.jpg);
+  }
+
+  .light{
+    --bg-url:url(./assets/bgdesktop-light.jpg);
+  }
 }
